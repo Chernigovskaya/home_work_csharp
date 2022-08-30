@@ -20,20 +20,22 @@ int number = Convert.ToInt32(Console.ReadLine());
 Console.Write(PalindromNum(number));
 */
 
-/*
+
 void PalindromNum(int number)
 {
     string num = number.ToString();
-    if (num[0] == num[4] & num[1] == num[3])
-        Console.WriteLine($"Number {num} is polindrom");
-    else Console.WriteLine($"Number {num} is not polindrom");
+    if (num.Length == 5)
+        if (num[0] == num[4] & num[1] == num[3])
+            Console.WriteLine($"Number {num} is polindrom");
+        else Console.WriteLine($"Number {num} is not polindrom");
+    else Console.WriteLine("Введите пятизначное число");
 }
 
 Console.Write("Input Number: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 PalindromNum(number);
-*/
+
 
 /*
 //Задача 21
