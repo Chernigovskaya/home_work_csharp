@@ -123,11 +123,9 @@ void DeltaSumArr(int[,] arr)
     {
         double middle = 0;
         for (int i = 0; i < arr.GetLength(0); i++)
-        {
-            middle = middle + arr[i, j];
-        }
+            middle += arr[i, j];
         middle = middle / arr.GetLength(0);
-        Console.Write($"{middle:f2}  ");
+        Console.Write($"{middle:f2} ");
     }
 }
 
